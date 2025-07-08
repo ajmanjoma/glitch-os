@@ -1,0 +1,32 @@
+# 💾 Binary files
+*.bin
+*.img
+*.vdi
+
+# 🛠 Build scripts and temp files
+*.o
+*.lst
+*.map
+*.tmp
+*.swp
+
+# 🧪 QEMU or VirtualBox runtime artifacts
+*.log
+*.sav
+*.lock
+*.vbox*
+*.vmdk
+*.nvram
+
+# macOS system files
+.DS_Store
+
+# 💡 Editor-specific
+*.sublime-project
+*.sublime-workspace
+*.vscode/
+*.idea/
+
+# Backup files
+*~
+*.bak

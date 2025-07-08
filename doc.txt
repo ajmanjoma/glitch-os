@@ -1,0 +1,45 @@
+nstall NASM (Assembler for x86):
+brew install nasm
+
+
+Install qemu (for quick testing):
+brew install qemu
+ 
+(Optional) Install bochs if you want another emulator:
+brew install bochs
+
+
+
+Assemble Bootloader
+nasm -f bin bootloader.asm -o bootloader.bin
+
+
+
+Create Floppy Disk Image
+dd if=/dev/zero of=disk.img bs=512 count=2880   # 1.44MB floppy
+dd if=bootloader.bin of=disk.img conv=notrunc
+
+
+
+nasm -f bin bootloader.asm -o bootloader.bin
+nasm -f bin vomit.asm -o vomit.bin
+nasm -f bin shake.asm -o shake.bin
+nasm -f bin screech.asm -o screech.bin
+nasm -f bin warp.asm -o warp.bin
+nasm -f bin flood.asm -o flood.bin
+
+dd if=/dev/zero of=disk.img bs=512 count=2880  # 1.44MB floppy
+dd if=bootloader.bin of=disk.img conv=notrunc
+dd if=vomit.bin of=disk.img bs=512 seek=2 conv=notrunc
+dd if=shake.bin of=disk.img bs=512 seek=3 conv=notrunc
+dd if=screech.bin of=disk.img bs=512 seek=4 conv=notrunc
+dd if=warp.bin of=disk.img bs=512 seek=5 conv=notrunc
+dd if=flood.bin of=disk.img bs=512 seek=6 conv=notrunc
+
+
+
+dd if=glitch1.bin of=disk.img bs=512 seek=1 conv=notrunc
+dd if=glitch2.bin of=disk.img bs=512 seek=2 conv=notrunc
+dd if=glitch3.bin of=disk.img bs=512 seek=3 conv=notrunc
+dd if=glitch4.bin of=disk.img bs=512 seek=4 conv=notrunc
+dd if=glitch5.bin of=disk.img bs=512 seek=5 conv=notrunc
