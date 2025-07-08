@@ -130,14 +130,3 @@ MIT License — fork it, glitch it, and learn from it.
 Created by [Antony Joseph Mathew](https://github.com/ajmanjoma)
 Contributions welcome!
 
-```
-
----
-
-Would you like me to:
-- Include demo images or ASCII diagrams?
-- Turn this into a GitHub Pages landing site?
-- Auto-generate `build.sh` for sector writing?
-
-Let me know — happy to help.
-```
