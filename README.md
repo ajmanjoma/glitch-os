@@ -5,7 +5,7 @@ Here's a complete and clean `README.md` for your `glitch-os` project:
 ````markdown
 # 🌀 Glitch OS
 
-**Glitch OS** is a collection of bare-metal x86 assembly demos booting from a custom bootloader.  
+Glitch OS is a collection of bare-metal x86 assembly demos booting from a custom bootloader.  
 Built for experimentation, retro visuals, and real-mode OS development learning.
 
 > Boot into color floods, screen shakes, speaker noise, and more—straight from `0x7C00`.
@@ -114,7 +114,8 @@ Otherwise, your CPU will jump into garbage after `call`.
 
 ## 🔥 Screenshots
 
-> *(Coming soon: visuals of each demo in QEMU!)*
+![glitchOS](https://github.com/user-attachments/assets/f22b7a02-61e0-4a86-b8e7-004ba8308891)
+
 
 ---
 
